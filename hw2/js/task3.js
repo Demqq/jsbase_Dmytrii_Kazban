@@ -8,6 +8,6 @@ if (number1 > number2 && number1 > number3) {
     console.log("число " + number1 + " больше чем остальные, вами введенные числа");
 } else if( number2 > number1 && number2 > number3) {
     console.log("число " + number2 + " больше чем остальные, вами введенные числа");
-} else if( number3 > number1 && number3 > number2) {
+} else {
     console.log("число " + number3 + " больше чем остальные, вами введенные числа");
 }
