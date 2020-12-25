@@ -6,6 +6,6 @@ var last_name = prompt('А фамилию можно Вашу?')
 
 var age = prompt('Ваш возраст тоже не помешает')
 
-alert( name);
-alert(last_name);
-alert(age);
+concole.log( name);
+concole.log(last_name);
+concole.log(age);
