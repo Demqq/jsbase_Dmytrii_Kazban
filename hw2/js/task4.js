@@ -8,9 +8,13 @@ a = +prompt("введите число от 1 до 10");
 b = +prompt("введите еще одно число от 10 до 20");
 c = 0;
 
-for(; a < b; a++) {
+for (; a < b; a++) {
     c += a;
+
+    if (a % 2 == 0) {
+        console.log(a);
+    }
 }
+console.log("sum " + c);
 
-document.write(c);
-
+var q = 19;
