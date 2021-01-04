@@ -12,12 +12,12 @@ for(i = 0; i < a.length; i++){
 
     for(j = 0; j < 3 ; j++){
 
-        if (i % 2 === 0) {
-            a[i][j] = ["even"];
+        if (i % 2 == 0) {
+            a[i][j] = "even";
         } else {
-            a[i][j] = ["odd"];
+            a[i][j] = "odd";
         }
     }
 }
-console.log (a);
+console.log (a); piska
 
