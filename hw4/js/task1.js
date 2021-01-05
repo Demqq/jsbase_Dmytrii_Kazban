@@ -3,20 +3,20 @@
 // 		Функция должна проверять корректность введенных чисел и знака операции.
 // 		Все аргументы для функции принять от пользователя.
 
+var num1 = +prompt("Enter a first number ");
+var num2 = +prompt("Enter a second number ");
+var sign2 = prompt("Enter a arithmetic operation sign +  - * / ");
+
+calculate(num1, num2, sign2);
+
 function calculate(a, b, sign) {
-    var a = +prompt("Enter a first number ");
-    var b = +prompt("Enter a second number ");
-    var sign = prompt("Enter a arithmetic operation sign +  - * / ");
+    
     var result;
 
     if (Number.isNaN(a) || Number.isNaN(b)) {
         console.log("The number that you have entered is not really a number")
-    }
-
-    if (sign === "+" || "-" || "*" || "/") {
-        console.log("You have wrote the wrong arithmetic sign")
-    }
-
+    } 
+    
     switch (sign) {
         case "+":
             result = a + b;
@@ -33,11 +33,12 @@ function calculate(a, b, sign) {
         case "/":
             result = a / b;
             break;
+
+        default: 
+            console.log("You have wrote the wrong arithmetic sign");
     }
 
     if (result !== undefined) {
         console.log("The result of you arithmetic operation is: " + result);
     }
 }
-
-calculate();
