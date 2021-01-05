@@ -4,14 +4,14 @@
 // Из двух массивов сделайте ассоциативный массив.
 // Массив, который будет выступать в качестве ключа - должен содержать уникальные значения
 
-var shoes = ["new balance 991", "new balance 997", "new balance 577", "new balance 1500"];
-var shoesPrice = ["120$", "130$", "110$", "150$"];
+// var shoes = ["new balance 991", "new balance 997", "new balance 577", "new balance 1500"];
+// var shoesPrice = ["120$", "130$", "110$", "150$"];
 
-var associativeArray  = new Object();
-for(var i = 0; i < shoes.length; i++){
-    associativeArray[shoes[i]] = shoesPrice[i];
-}
-console.log(associativeArray);
+// var associativeArray  = new Object();
+// for(var i = 0; i < shoes.length; i++){
+//     associativeArray[shoes[i]] = shoesPrice[i];
+// }
+// console.log(associativeArray);
 
 
 // var o_size = 0;
@@ -19,3 +19,14 @@ console.log(associativeArray);
 //     o_size++;
 // }
 // alert(o_size);   
+
+var a = {
+    "test": 123,
+    "b": 2
+  };
+  
+  console.log(a[0]);
+  
+  var a = [0, 1, 3];
+  
+  console.log(a[0]);
