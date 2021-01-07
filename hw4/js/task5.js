@@ -13,11 +13,10 @@
 var question = confirm("Hello, do you want to play the game \"Rock-Paper-Scissors\"?");
 
 if (question === true){
-    getWinner(humanChoice, machineChoice);
+    getWinner(userChoice, computerChoice);
 } else {
     alert("thank you, come again!");
 }
-
 
 
 // if (userChoice !== "rock" || userChoice !== "paper" || userChoice !== "scissors") {
@@ -60,7 +59,6 @@ function getWinner(humanChoice, machineChoice) {
             console.log("the computer choice is " + machineChoice + " and the user choice is " + humanChoice + " winnes is rock");
         }
     }
-
 }
 
 getWinner(userChoice, computerChoice);
