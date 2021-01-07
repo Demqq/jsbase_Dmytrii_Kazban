@@ -10,26 +10,20 @@
 // 		Спросить пользователя, хочет ли он повторить, если "да", запустить игру заново
 
 
-// var question = confirm("Hello, do you want to play the game \"Rock-Paper-Scissors\"?");
-// var userChoice = prompt("Choose between that options \"Rock-Paper-Scissors\"");
-// var fromBeginning;
-// userChoice = userChoice.toLowerCase();
-// var computerChoice = Math.random();
+var question = confirm("Hello, do you want to play the game \"Rock-Paper-Scissors\"?");
 
-// if (question) {
+if (question === true){
+    getWinner(humanChoice, machineChoice);
+} else {
+    alert("thank you, come again!");
+}
 
-// }
+
 
 // if (userChoice !== "rock" || userChoice !== "paper" || userChoice !== "scissors") {
 //     userChoice = prompt("Choose a correct options");
 // }
-// if (computerChoice <= 0.33) {
-//     computerChoice = "rock";
-// } else if (computerChoice <= 0.66) {
-//     computerChoice = "paper";
-// } else {
-//     computerChoice = "scissors"
-// }
+
 
 var userChoice = prompt("Choose between that options \"Rock-Paper-Scissors\"");
 userChoice = userChoice.toLowerCase();
@@ -44,8 +38,6 @@ if (computerChoice <= 0.33) {
 }
 
 function getWinner(humanChoice, machineChoice) {
-
-
 
     if (humanChoice === machineChoice) {
         console.log("the computer choice is " + machineChoice + " and the user choice is " + humanChoice + " the result of the game is tie");
