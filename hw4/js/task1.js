@@ -15,6 +15,7 @@ function calculate(a, b, sign) {
 
     if (Number.isNaN(a) || Number.isNaN(b)) {
         console.log("The number that you have entered is not really a number")
+        return;
     } 
     
     switch (sign) {
