@@ -10,20 +10,6 @@
 // 		Спросить пользователя, хочет ли он повторить, если "да", запустить игру заново
 
 
-var question = confirm("Hello, do you want to play the game \"Rock-Paper-Scissors\"?");
-
-if (question === true){
-    getWinner(userChoice, computerChoice);
-} else {
-    alert("thank you, come again!");
-}
-
-
-// if (userChoice !== "rock" || userChoice !== "paper" || userChoice !== "scissors") {
-//     userChoice = prompt("Choose a correct options");
-// }
-
-
 var userChoice = prompt("Choose between that options \"Rock-Paper-Scissors\"");
 userChoice = userChoice.toLowerCase();
 var computerChoice = Math.random();
@@ -60,6 +46,11 @@ function getWinner(humanChoice, machineChoice) {
         }
     }
 }
+
+do{
+    getWinner(userChoice, computerChoice);
+    var isContinue = confirm("Do you want to continue this amazing game?"); 
+} while(isContinue)
 
 getWinner(userChoice, computerChoice);
 
