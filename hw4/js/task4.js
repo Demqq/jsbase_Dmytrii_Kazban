@@ -6,16 +6,6 @@
 // 		Ряд Фибоначчи: 1, 1, 2, 3, 5, 8, 13, ...
 // 		Функция должна вернуть: 8
 
-// function fibonacci(number) {
-//     var a = 1;
-//     var b = 1;
-//     for (let i = 3; i <= number; i++) {
-//       let c = a + b;
-//       a = b;
-//       b = c;
-//     }
-//     return b;
-//   }
 
 function fib(n) {
     var a = 0;
