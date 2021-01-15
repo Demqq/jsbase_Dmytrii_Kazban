@@ -4,24 +4,24 @@
 
 var company = [];
 let a;
-do{
+do {
     company.push(
         employee = {
-        name: prompt("Please, enter the employee name"),
-        sName: prompt('Please, enter the employee second name'),
-        age: +prompt("Please, enter the employee age"),
-        occupation: prompt("Please, enter the employee occupation"),
-        show: function () {
-           console.log("The eployee name is: " + this.name);
-           console.log("The eployee second name is: " + this.sName);
-           console.log("The eployee age is: " + this.age); 
-           console.log("The eployee occupation is: " + this.occupation)
-        }
+            name: prompt("Please, enter the employee name"),
+            sName: prompt('Please, enter the employee second name'),
+            age: +prompt("Please, enter the employee age"),
+            occupation: prompt("Please, enter the employee occupation"),
+            show: function () {
+                console.log("The eployee name is: " + this.name);
+                console.log("The eployee second name is: " + this.sName);
+                console.log("The eployee age is: " + this.age);
+                console.log("The eployee occupation is: " + this.occupation)
+            }
         },
-    ) 
+    )
     employee.show();
     a = confirm("do you want to reenter employee information?")
-}while(a);
+} while (a);
 
 
 function addSalary(arr) {
@@ -51,3 +51,27 @@ for (var i = 0; i < company.length; i++) {
     console.log("Occupation: " + company[i].occupation);
     console.log("Salary: " + company[i].salary);
 }
+
+
+
+
+company.sort(function(a, b){
+ return a.age - b.age;
+})
+console.log(company);
+
+
+
+// let options = prompt("Enter the option that you want to be sorted (name, sName, age, occupation, salary)");
+
+// function sortElements(a, b){
+//     if (a["name"] > b["name"], a["sName"] > b["sName"]) {
+//         return 1;
+//     } else if (a["name"] < b["name"], a["sName"] < b["sName"]) {
+//         return -1;
+//     } else {
+//         return 0;
+//     }
+// }
+
+// company.sort(a, b);
