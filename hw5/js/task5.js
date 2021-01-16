@@ -4,6 +4,7 @@
 
 var company = [];
 let a;
+var options;
 do {
     company.push(
         employee = {
@@ -53,25 +54,44 @@ for (var i = 0; i < company.length; i++) {
 }
 
 
-
-
 company.sort(function(a, b){
- return a.age - b.age;
+    options = prompt("Enter the option that you want to be sorted (name, sName, age, occupation, salary)");
+
+    switch(options){
+        case "name":
+            if (a["name"] > b["name"]) {
+                return 1;
+            }
+            else if (a["name"] < b["name"]) {
+                return -1;
+            } else {return 0;}
+            break;
+        case "sName":
+            if (a["sName"] > b["sName"]) {
+                return 1;
+            }
+            else if (a["sName"] < b["sName"]) {
+                return -1;
+            } else {return 0;}
+            break;
+        case "occupation":
+            if (a["occupation"] > b["occupation"]) {
+                return 1;
+            }
+            else if (a["occupation"] < b["occupation"]) {
+                return -1;
+            } else {return 0;}
+            break;
+        case "age":
+            return a["age"] - b["age"];
+            break;
+        case "salary":
+            return a["salary"] - b["salary"];
+            break;
+        
+        default:
+            alert("None");
+    }   
 })
+
 console.log(company);
-
-
-
-// let options = prompt("Enter the option that you want to be sorted (name, sName, age, occupation, salary)");
-
-// function sortElements(a, b){
-//     if (a["name"] > b["name"], a["sName"] > b["sName"]) {
-//         return 1;
-//     } else if (a["name"] < b["name"], a["sName"] < b["sName"]) {
-//         return -1;
-//     } else {
-//         return 0;
-//     }
-// }
-
-// company.sort(a, b);
