@@ -19,5 +19,5 @@ function fib(n) {
     }
     return c;
 }
-n = +prompt("Введите число n: ");
+var n = +prompt("Введите число n: ");
 console.log(fib(n));
