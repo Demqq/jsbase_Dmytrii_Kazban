@@ -1,14 +1,5 @@
 // 7. Массив watchList содержит объекты с информацией о нескольких фильмах. Используйте filter и map для возврата нового массива объектов только с title и rating, но где imdbRating больше или равен 8.0.
 
-watchList.map(function (obj) {
-    console.log([obj["Title"], obj["imdbRating"]]);
-})
-
-
-var filteredList;
-console.log(filteredList);
-
-
 var watchList = [
     {
         "Title": "Inception",
@@ -121,3 +112,7 @@ var watchList = [
         "Response": "True"
     }
 ];
+
+var rated =  watchList.map((obj => [obj["Title"], obj["imdbRating"]]));
+rated = rated.filter((item => [item["imdbRating"] >= 8]));
+console.log(rated);

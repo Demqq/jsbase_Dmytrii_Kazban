@@ -16,14 +16,16 @@
             Ryan: {
                 age: 19,
                 online: true
-            }
+            },
         };
 
         function countOnline(obj) {
-            for(prop in obj){
-                if(obj["Alan"]["online"]){
-                    return "";
+            var online = 0;
+            for(var i in obj){
+                if(obj[i].online === true){
+                    online++; 
                 }
-            }   
+            }
+            return online;
         }
         console.log(countOnline(users));

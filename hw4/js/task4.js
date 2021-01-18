@@ -17,7 +17,7 @@ function fib(n) {
         a = b;
         b = c;
     }
-    return c;
+    return b;
 }
 var n = +prompt("Введите число n: ");
 console.log(fib(n));
