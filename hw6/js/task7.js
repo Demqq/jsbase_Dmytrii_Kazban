@@ -112,7 +112,8 @@ var watchList = [
         "Response": "True"
     }
 ];
+ 
+var rating = watchList.filter((obj) => (obj.imdbRating) >= 8.0).map((obj => [obj.Title, obj.imdbRating]));
 
-var rated =  watchList.map((obj => [obj["Title"], obj["imdbRating"]]));
-rated = rated.filter((item => [item["imdbRating"] >= 8]));
-console.log(rated);
+console.log(rating);
+
