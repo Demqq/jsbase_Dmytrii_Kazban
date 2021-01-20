@@ -1,0 +1,100 @@
+body {
+  font-family: "Roboto";
+}
+
+.container {
+  font-family: 'Roboto';
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.container img {
+  width: 600px;
+  height: 400px;
+}
+
+.movie-slider__item p {
+  margin: 20px 0;
+  font-size: 20px;
+  color: grey;
+}
+
+.slick-slider {
+  margin-top: 100px;
+  position: relative;
+  padding: 0 100px;
+  text-align: center;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  z-index: 10;
+  font-size: 0;
+  width: 100px;
+  height: 100px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.slick-arrow.slick-disabled {
+  opacity: 0.2;
+}
+
+.slick-prev {
+  left: 0;
+  background-image: url(../img/slider-arrows/left-arrow.svg);
+  background-repeat: no-repeat;
+}
+
+.slick-next {
+  right: 0;
+  background-image: url(../img/slider-arrows/right-arrow.svg);
+  background-repeat: no-repeat;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-dots li {
+  margin-right: 15px;
+  list-style: none;
+}
+
+.slick-dots li:last-child {
+  margin-right: 0;
+}
+
+.slick-dots li .slick-active {
+  background-color: grey;
+}
+
+.slick-dots button {
+  cursor: pointer;
+  font-size: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background-color: aqua;
+}
+
+.slick-dots li.slick-active button {
+  background-color: grey;
+}
+/*# sourceMappingURL=style.css.map */
