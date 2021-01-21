@@ -40,26 +40,26 @@ body {
   margin-top: -50px;
   z-index: 10;
   font-size: 0;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   border: none;
   outline: none;
   background-color: transparent;
   cursor: pointer;
 }
 
-.slick-arrow.slick-disabled {
+.slick-arrow .slick-disabled {
   opacity: 0.2;
 }
 
 .slick-prev {
-  left: 40px;
+  left: 0;
   background-image: url(../img/slider-arrows/left-arrow.svg);
   background-repeat: no-repeat;
 }
 
 .slick-next {
-  right: 40px;
+  right: 0;
   background-image: url(../img/slider-arrows/right-arrow.svg);
   background-repeat: no-repeat;
 }
@@ -83,6 +83,10 @@ body {
   background-color: grey;
 }
 
+.slick-dots li .slick-active button {
+  background-color: grey;
+}
+
 .slick-dots button {
   cursor: pointer;
   font-size: 0;
@@ -92,9 +96,5 @@ body {
   border: none;
   outline: none;
   background-color: aqua;
-}
-
-.slick-dots li.slick-active button {
-  background-color: grey;
 }
 /*# sourceMappingURL=style.css.map */

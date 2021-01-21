@@ -55,6 +55,10 @@ body {
         outline: none;
         background-color: transparent;
         cursor: pointer;
+
+        .slick-disabled {
+            opacity: 0.2;
+        }
         
     }
     
@@ -87,6 +91,10 @@ body {
 
             .slick-active {
                 background-color: grey;
+                
+                button {
+                    background-color: grey;
+                }
             }
         }
 
