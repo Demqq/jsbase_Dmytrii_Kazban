@@ -38,7 +38,7 @@ function createModalWindow() {
 
     let sendButton = document.createElement('button');
     sendButton.classList.add('my-modal-window__send-button');
-    sendButton.innerText = "Send your information to the FBI";
+    sendButton.innerText = "Send your information";
     sendButton.addEventListener('click', () => {
         if (inputEmail.value.indexOf("@") == -1 ) {
             alert("We cannot send your information to FBI, write correct e-mail, or name")
